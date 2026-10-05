@@ -1,0 +1,25 @@
+{
+  "name": "myelin-1",
+  "version": "0.1.0",
+  "description": "LinkedIn and Indeed job-posting scrapers with a small SQLite store that reports only what is new.",
+  "author": "Adhar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "tsx src/cli.ts scrape",
+    "jobs": "tsx src/cli.ts list",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "better-sqlite3": "13.0.1",
+    "playwright-core": "1.62.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.13",
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  }
+}
